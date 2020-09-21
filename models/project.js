@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const projectSchema = new mongoose.Schema({
   authorId: {
-    type: Number,
+    type: String,
     required: true,
   },
   authorFirstName: {

@@ -11,9 +11,9 @@ router.get("/", auth, async (req, res) => {
 
 router.post("/", auth, async (req, res) => {
   const project = new Project({
-    authorId: 1234,
-    authorFirstName: "Net",
-    authorLastName: "Ninja",
+    authorId: req.user._id,
+    authorFirstName: req.user.firstName,
+    authorLastName: req.user.lastName,
     title: req.body.title,
     content: req.body.content,
   });

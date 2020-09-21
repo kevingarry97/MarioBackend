@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "",
-  "mongoUrl": "mongodb://localhost:27017/tiendra"
+  "mongoUrl": "mongodb://localhost:27017/project"
 }
